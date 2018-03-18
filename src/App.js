@@ -16,6 +16,15 @@ import MobileControls from './components/MobileControls';
 import SundayView from './components/SundayView';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      restaurantData: [],
+      menuData: [],
+      selected: 0,
+    };
+  }
+
   fetchMenuData = (areacode, id) => {
     if (areacode <= 5) {
       axios.get(`${apiUrls.restaurant}${id}`).then(restaurantData => {
@@ -36,6 +45,7 @@ class App extends Component {
       });
     }
   };
+
   handlePlaceClick = event => {
     classHelpers.addClasses(
       document.getElementById('left'),
@@ -64,15 +74,6 @@ class App extends Component {
     );
     classHelpers.deHighlightLinks();
   };
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      restaurantData: [],
-      menuData: [],
-      selected: 0,
-    };
-  }
 
   componentDidMount() {
     if (ls.get('restaurantData') === null && ls.get('menuData') === null) {
