@@ -63,6 +63,7 @@ class App extends Component {
       selected: parseInt(event.target.id, 10),
     });
   };
+
   handleBackButtonClick = () => {
     classHelpers.addClasses(
       document.getElementById('right'),
@@ -116,7 +117,7 @@ class App extends Component {
 
     return (
       <div className="container-fluid">
-        <div className="row-fluid">
+        <div className="row">
           <div id="left" className="col-sm-6">
             <h1>ROHEIINICAFÉ</h1>
             <div id="date">{moment().format('D.M.YYYY')}</div>

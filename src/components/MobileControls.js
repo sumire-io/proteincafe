@@ -7,7 +7,7 @@ class MobileControls extends React.Component {
         <h3 className="mobile_title">
           <span id="back_button">
             <a className="back" onClick={this.props.handleBackButtonClick}>
-              <img src="../images/back_arrow.svg" alt={'Back button'} />
+              <img src="./images/back_arrow.svg" alt={'Back button'} />
             </a>
           </span>{' '}
           <span id="title">{this.props.location}</span>
