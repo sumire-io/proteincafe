@@ -134,12 +134,10 @@ class App extends Component {
           <div id="right" className="col-sm-6 d-none d-md-block">
             {mealItemsToShow.length > 0 && (
               <div>
-                {UI.getWidth() < 480 && (
-                  <MobileControls
-                    location={locationHelper.getLocation(this.state.selected)}
-                    handleBackButtonClick={this.handleBackButtonClick}
-                  />
-                )}
+                <MobileControls
+                  location={locationHelper.getLocation(this.state.selected)}
+                  handleBackButtonClick={this.handleBackButtonClick}
+                />
                 <MealList
                   restaurantData={restaurantData}
                   mealItemsToShow={mealItemsToShow}
