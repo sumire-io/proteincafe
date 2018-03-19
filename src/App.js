@@ -104,7 +104,7 @@ class App extends Component {
 
   render() {
     UI.checkResize();
-    if (UI.getWidth() > 480 && document.getElementById(this.state.selected)) {
+    if (UI.getWidth() > 767 && document.getElementById(this.state.selected)) {
       document.getElementById(this.state.selected).style.color = '#4CC1FC';
     }
     const today = new Date();
