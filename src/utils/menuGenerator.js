@@ -21,9 +21,10 @@ const generateMenuData = menuData => {
 
   allItemsForToday = allItemsForToday.filter(
     item =>
-      item.price.name === 'Edullisesti' ||
-      item.price.name === 'Maukkaasti' ||
-      item.price.name === 'Aukio Edullisesti',
+      item.price.name === 'Päivän lounas' ||
+      item.price.name === 'Päivän erikoinen' ||
+      item.price.name === 'Kaivopiha Päivän lounas' ||
+      item.price.name === 'Kaivopiha Päivän erikoinen'
   );
 
   for (let i = 1; i <= 5; i++) {

@@ -2,7 +2,7 @@
   "name": "roheiinicafe",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://sumire-io.github.io/proteincafe",
+  "homepage": "./",
   "dependencies": {
     "axios": "^0.18.0",
     "jest-cli": "^23.0.0-alpha.0",
